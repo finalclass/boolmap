@@ -23,6 +23,14 @@
   "bugs": {
     "url": "https://github.com/finalclass/boolmap/issues"
   },
+  "jspm": {
+    "format": "es6",
+    "directories": {
+      "lib": "src"
+    },
+    "main": "BoolMap.js",
+    "registry": "jspm"
+  },
   "homepage": "https://github.com/finalclass/boolmap",
   "devDependencies": {
     "gulp-babel": "4.0.0",
