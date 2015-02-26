@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var sourcemaps = require('gulp-sourcemaps');
-var to5 = require('gulp-6to5');
+var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 
@@ -13,7 +13,7 @@ gulp.task('watch', function () {
 gulp.task('compile', function () {
   return gulp.src('src/**/*.js')
     .pipe(sourcemaps.init())
-    .pipe(to5())
+    .pipe(babel())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist'));
 });
@@ -21,7 +21,7 @@ gulp.task('compile', function () {
 gulp.task('min', function () {
   return gulp.src('src/**/*.js')
     .pipe(sourcemaps.init())
-    .pipe(to5())
+    .pipe(babel())
     .pipe(uglify())
     .pipe(rename('BoolMap.min.js'))
     .pipe(sourcemaps.write('.'))

@@ -20,6 +20,7 @@ var BoolMap = (function () {
     setAll: {
       value: function setAll(value) {
         var _this = this;
+
         this.keys().forEach(function (key) {
           return _this.set(key, value);
         });
@@ -58,6 +59,7 @@ var BoolMap = (function () {
     isAnyTrue: {
       value: function isAnyTrue() {
         var _this = this;
+
         return this.keys().some(function (key) {
           return !!_this[key];
         });
@@ -68,6 +70,7 @@ var BoolMap = (function () {
     isAnyFalse: {
       value: function isAnyFalse() {
         var _this = this;
+
         return this.keys().some(function (key) {
           return !_this[key];
         });
@@ -78,6 +81,7 @@ var BoolMap = (function () {
     isAllTrue: {
       value: function isAllTrue() {
         var _this = this;
+
         return this.keys().every(function (key) {
           return !!_this[key];
         });
@@ -88,6 +92,7 @@ var BoolMap = (function () {
     isAllFalse: {
       value: function isAllFalse() {
         var _this = this;
+
         return this.keys().every(function (key) {
           return !_this[key];
         });
@@ -105,6 +110,7 @@ var BoolMap = (function () {
     trueKeys: {
       value: function trueKeys() {
         var _this = this;
+
         return Object.keys(this).filter(function (key) {
           return _this[key];
         });
@@ -115,6 +121,7 @@ var BoolMap = (function () {
     falseKeys: {
       value: function falseKeys() {
         var _this = this;
+
         return Object.keys(this).filter(function (key) {
           return !_this[key];
         });
