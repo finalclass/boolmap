@@ -73,7 +73,7 @@ Returns keys (array of strings) that are false
 
 __Array access__
 
-You can treat the BoolMap as an array:
+You work with BoolMap as with an array:
 
 ```js
 
