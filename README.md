@@ -42,6 +42,10 @@ __isTrue(key:string):boolean__
 
 Returns true if the key is true
 
+__isFalse(key:string):boolean__
+
+Returns true if the key is false
+
 __isAnyTrue():boolean__
 
 Returns true if at least one key in map is true

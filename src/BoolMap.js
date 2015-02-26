@@ -17,6 +17,9 @@ class BoolMap {
   isTrue(key) {
     return !!this[key];
   }
+  isFalse(key) {
+    return !this[key];
+  }
   isAnyTrue() {
     return this.keys().some(key => !!this[key]);
   };

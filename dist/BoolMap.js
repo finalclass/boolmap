@@ -56,6 +56,13 @@ var BoolMap = (function () {
       writable: true,
       configurable: true
     },
+    isFalse: {
+      value: function isFalse(key) {
+        return !this[key];
+      },
+      writable: true,
+      configurable: true
+    },
     isAnyTrue: {
       value: function isAnyTrue() {
         var _this = this;

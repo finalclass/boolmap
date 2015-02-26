@@ -47,6 +47,13 @@ describe('BoolMap', function () {
     expect(map.isTrue('2')).toBe(false);
   });
 
+  it('checks if false', function() {
+    map.set('1', false);
+    map.set('2', true);
+    expect(map.isFalse('1')).toBe(true);
+    expect(map.isFalse('2')).toBe(false);
+  });
+
   it('checks if any is true when there is one true', function () {
     map.set('1', true);
     map.set('2', false);
