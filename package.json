@@ -2,7 +2,7 @@
   "name": "boolmap",
   "version": "1.0.0",
   "description": "Hash object for boolean values with extra usefull functions (ES6)",
-  "main": "BoolMap.js",
+  "main": "dist/BoolMap.js",
   "scripts": {
     "test": "jasmine-node spec/"
   },
@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/finalclass/boolmap/issues"
   },
-  "homepage": "https://github.com/finalclass/boolmap"
+  "homepage": "https://github.com/finalclass/boolmap",
+  "devDependencies": {
+    "gulp-6to5": "^3.0.0",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-uglify": "^1.1.0",
+    "jasmine-node": "^1.14.5"
+  }
 }
