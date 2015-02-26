@@ -1,6 +1,6 @@
 {
   "name": "boolmap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hash object for boolean values with extra usefull functions (ES6)",
   "main": "dist/BoolMap.js",
   "scripts": {
