@@ -1,0 +1,27 @@
+{
+  "name": "boolmap",
+  "version": "1.0.0",
+  "description": "Hash object for boolean values with extra usefull functions (ES6)",
+  "main": "BoolMap.js",
+  "scripts": {
+    "test": "jasmine-node spec/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:finalclass/boolmap.git"
+  },
+  "keywords": [
+    "map",
+    "hash",
+    "boolean",
+    "bool",
+    "es6",
+    "jspm"
+  ],
+  "author": "Szymon Wygnański <s@finalclass.net> (http://finalclass.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/finalclass/boolmap/issues"
+  },
+  "homepage": "https://github.com/finalclass/boolmap"
+}
